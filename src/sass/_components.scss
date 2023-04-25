@@ -94,3 +94,73 @@ li.active a {
     color: #222;
   }
 }
+
+.banner {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 3rem 5rem;
+  background-image: linear-gradient(to right bottom, #fff, $color-grad-4);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner__welcome {
+  grid-column: 1 / 2;
+  margin-top: 5rem;
+  transition: all 0.8s;
+
+  .banner__title {
+    font-size: 4.8rem;
+  }
+}
+.banner__welcome.hide {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.img__delivery {
+  width: 2.5rem;
+}
+.banner__image {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.img__container {
+  height: 50rem;
+}
+
+.juice__img {
+  transform: translateX(32rem);
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.81, 0.1, 0.06, 0.56);
+}
+.juice__img--hide {
+  transform: scale(4) translateX(50rem);
+  opacity: 0;
+}
+
+.strow__img {
+  transform: rotate(-320deg) translateY(-7rem) translateX(-5rem);
+  transition: all 0.9s cubic-bezier(0.98, 0.83, 0.62, 0.74);
+  transition-delay: 0.5s;
+}
+.strow__img--hide {
+  transform: scale(0.2) rotate(-320deg) translateY(-20rem) translateX(-50rem);
+  opacity: 0;
+}
+
+.btn__delivery {
+  background-color: $color-primary;
+  padding: 1.5rem 4rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 99rem;
+  box-shadow: $color-grey-dark-2;
+  transition: all 0.3s ease-out;
+  margin-top: 3rem;
+
+  &:hover {
+    padding-left: 4.2rem;
+  }
+}

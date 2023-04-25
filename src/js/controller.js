@@ -23,3 +23,26 @@ nav.addEventListener("mouseout", function (e) {
     if (menu !== el) el.style.filter = "none";
   });
 });
+
+// BANNER IMAGES ANIMATIONS
+const juiceImg = document.querySelector(".juice__img");
+const strowImg = document.querySelector(".strow__img");
+const bannerText = document.querySelector(".banner__welcome");
+const banner = document.querySelector(".banner");
+
+const imgJuiceObeserver = new IntersectionObserver(
+  function (entries) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+    juiceImg.classList.remove("juice__img--hide");
+    strowImg.classList.remove("strow__img--hide");
+    bannerText.classList.remove("hide");
+  },
+  {
+    root: null,
+    threshold: 0.5,
+  }
+);
+
+imgJuiceObeserver.observe(banner);

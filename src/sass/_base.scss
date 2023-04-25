@@ -5,6 +5,7 @@ $color-primary: #ec601e;
 $color-grad-1: #e05c5d;
 $color-grad-2: #ea5516;
 $color-grad-3: #f5ac2a;
+$color-grad-4: #f5ead4;
 
 $color-grey-light-1: #ece7e9;
 $color-grey-light-2: #dfdcde;
@@ -47,6 +48,7 @@ img {
 .btn {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 html {
@@ -71,6 +73,18 @@ body {
   margin: 5rem auto;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 8px $color-primary;
+  overflow: hidden;
+}
+
+.title__big {
+  font-family: "Caveat", cursive;
+  color: #333;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 // font-family: 'Caveat', cursive;
