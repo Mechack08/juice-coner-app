@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text:wght@400;600;700&family=Nunito+Sans:wght@200;400;600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Sedgwick+Ave+Display&display=swap");
+
+/* COLORS */
+$color-primary: #ec601e;
+$color-grad-1: #e05c5d;
+$color-grad-2: #ea5516;
+$color-grad-3: #f5ac2a;
+
+$color-grey-light-1: #ece7e9;
+$color-grey-light-1: #dfdcde;
+$color-grey-dark-1: #a5a5a5;
+$color-grey-dark-2: #777777;
+
+$gradient: linear-gradient(to right bottom, $color-grad-2, $color-grad-3);
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: $gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 5rem);
+}
+
+.container {
+  max-width: $bp-large;
+  background-color: #fff;
+  margin: 5rem auto;
+  border-radius: 0.25rem;
+}
+
+// font-family: 'Caveat', cursive;
+// font-family: 'Crimson Text', serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Sedgwick Ave Display', cursive;

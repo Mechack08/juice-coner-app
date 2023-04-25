@@ -1,0 +1,9 @@
+nav {
+  display: grid;
+  grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  grid-column: 2 / 3;
+}
