@@ -31,13 +31,16 @@ const bannerText = document.querySelector(".banner__welcome");
 const banner = document.querySelector(".banner");
 
 const imgJuiceObeserver = new IntersectionObserver(
-  function (entries) {
+  function (entries, observer) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) return;
+
     juiceImg.classList.remove("juice__img--hide");
     strowImg.classList.remove("strow__img--hide");
     bannerText.classList.remove("hide");
+
+    imgJuiceObeserver.unobserve(banner);
   },
   {
     root: null,
