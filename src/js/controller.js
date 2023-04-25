@@ -40,7 +40,7 @@ const imgJuiceObeserver = new IntersectionObserver(
     strowImg.classList.remove("strow__img--hide");
     bannerText.classList.remove("hide");
 
-    imgJuiceObeserver.unobserve(banner);
+    observer.unobserve(banner);
   },
   {
     root: null,
