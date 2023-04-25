@@ -19,7 +19,12 @@
     <div class="container">
       <header>
         <nav>
-          <span class="logo">J C</span>
+          <span class="logo"
+            ><a href="#"
+              ><img
+                src="src/assets/juice-corner-logo-removebg-preview.png"
+                alt="" /></a
+          ></span>
           <form class="searchbar">
             <input
               type="text"
@@ -31,14 +36,25 @@
             </button>
           </form>
           <ul class="nav__list">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Meet Us</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__item--link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item--link">Offer</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item--link">Meet Us</a>
+            </li>
           </ul>
           <div class="order">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart__lable">Your Order</span>
-            <span class="cart__total">$27.00</span>
+            <div class="order__icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="order__number">4</span>
+            </div>
+            <div class="order__desc">
+              <span class="cart__lable">Your Order</span>
+              <span class="cart__total">$27.00</span>
+            </div>
           </div>
         </nav>
       </header>

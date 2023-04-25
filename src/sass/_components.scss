@@ -1,9 +1,96 @@
 nav {
   display: grid;
   grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+  align-items: center;
+  font-size: 1.6rem;
+  padding-top: 4rem;
 }
 
 .logo {
   font-size: 1.8rem;
   grid-column: 2 / 3;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.searchbar {
+  grid-column: 3 / 7;
+  justify-self: center;
+  border: 1px solid $color-grey-dark-1;
+  width: 80%;
+  background-color: brown;
+  position: relative;
+  height: 3.5rem;
+  border-radius: 99rem;
+
+  display: flex;
+
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 99rem;
+    padding: 0 8.5rem 0 1.3rem;
+  }
+
+  .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 0.2rem;
+    transform: translateY(-50%);
+    height: 3rem;
+    width: 7.5rem;
+    border-radius: 99rem;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: #fff;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: $color-grad-3;
+    }
+  }
+}
+
+.nav__list {
+  grid-column: 7 / 10;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  transition: all 0.3s ease-out;
+}
+li.active a {
+  color: $color-primary;
+}
+
+.order {
+  grid-column: 11 / 12;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order__icon {
+  position: relative;
+}
+.order__number {
+  position: absolute;
+  top: -0.8rem;
+  right: -0.8rem;
+  font-size: 1rem;
+  background-color: $color-grad-2;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.order__desc {
+  font-size: 1.2rem;
+
+  .cart__total {
+    font-weight: 700;
+    color: #222;
+  }
 }
