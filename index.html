@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script defer src="src/js/controller.js"></script>
+    <script type="module" src="src/js/controller.js"></script>
   </head>
   <body class="modal__menu">
     <div class="container">
@@ -67,12 +67,12 @@
             <p>
               We deliver in one click.
               <img
-                src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
+                src="src/assets/Screenshot_2023-04-25_171235-removebg-preview.png"
                 alt="empty cup with strow"
                 class="img__delivery"
               />
             </p>
-            <button class="btn btn__delivery">
+            <button class="btn btn__delivery banner__btn">
               Order now &nbsp; <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -92,13 +92,15 @@
           </div>
         </div>
       </header>
-      <section class="menu" id="menu">
-        <div class="menu__bg--modal hide">
-          <div class="menu__wrapper-modal hide">
+      <section class="menu menu__section" id="menu">
+        <div class="menu__bg--modal hidden">
+          <div class="menu__wrapper-modal">
             <h2 class="title__big menu__title">Our Menu</h2>
             <div class="menu__container">
               <h2 class="title__small">Normal Juice</h2>
-              <div class="menu__container--wrapper">
+              <div
+                class="menu__container--wrapper menu__container--wrapper--normal"
+              >
                 <!-- prev arrow -->
                 <div class="arrow--menu arrow__prev">
                   <i class="fa-solid fa-angle-left"></i>
@@ -108,82 +110,50 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
 
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
+                <!-- Menu Card start -->
+                <!-- <div class="menu__content">
+                  <div class="menu__content--card menu__content--card-front">
+                    <h3 class="menu__name">Orange Juice</h3>
+                    <div class="img__container--menu">
+                      <img
+                        src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <span class="menu__price">$3.20</span>
                   </div>
-                  <span class="menu__price">$3.20</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Pineple Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/anna-wlodarczyk-hOThghGqaoU-unsplash.jpg"
-                      alt=""
-                    />
+                  <div class="menu__content--card menu__content--card-back">
+                    <h3 class="menu__name back">Orange Juice</h3>
+                    <ul class="menu__ing--list">
+                      <li class="menu__ing--item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Orange</span>
+                      </li>
+                      <li class="menu__ing--item">
+                        <i class="fa-solid fa-check"></i> <span>Maracuja</span>
+                      </li>
+                      <li class="menu__ing--item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Sugar Canne</span>
+                      </li>
+                      <li class="menu__ing--item">
+                        <i class="fa-solid fa-check"></i> <span>Honey</span>
+                      </li>
+                    </ul>
+                    <span class="menu__price back">$3.20</span>
+                    <button class="btn btn__delivery">Add</button>
                   </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
+                </div> -->
               </div>
             </div>
+            <!-- Menu Card end -->
+            <!-- </div> -->
 
             <div class="menu__container">
               <h2 class="title__small">Cocktail Juice</h2>
-              <div class="menu__container--wrapper">
+              <div
+                class="menu__container--wrapper menu__container--wrapper-cocktail"
+              >
                 <!-- prev arrow -->
                 <div class="arrow--menu arrow__prev">
                   <i class="fa-solid fa-angle-left"></i>
@@ -191,76 +161,6 @@
                 <!-- next arrow -->
                 <div class="arrow--menu arrow__next">
                   <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
-                </div>
-                <div class="menu__content">
-                  <h3 class="menu__name">Orange Juice</h3>
-                  <div class="img__container--menu">
-                    <img
-                      src="src/assets/mae-mu-T7heq8rawkc-unsplash.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <span class="menu__price">$4.50</span>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ export const menus = [
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const menus = [
     price: 2,
     image:
       "https://images.unsplash.com/photo-1486947799489-3fabdd7d32a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
     id: 4,
@@ -33,240 +33,150 @@ export const menus = [
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 5,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 6,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 7,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 8,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 9,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 10,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 11,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 12,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 13,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 14,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 15,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 16,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 17,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 18,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
   {
-    id: 1,
+    id: 19,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Normal",
   },
   {
-    id: 1,
+    id: 20,
     name: "Orange Tango",
     content: ["Orange", "Lemon", "Sugar", "Mango"],
     price: 3.2,
     image:
       "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
-  },
-  {
-    id: 1,
-    name: "Orange Tango",
-    content: ["Orange", "Lemon", "Sugar", "Mango"],
-    price: 3.2,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    category: "Orange Juice",
+    category: "Cocktail",
   },
 ];

@@ -118,6 +118,10 @@ li.active a {
   transform: translateY(5rem);
 }
 
+.banner__btn {
+  margin-top: 3rem;
+}
+
 .img__delivery {
   width: 2.5rem;
 }
@@ -158,7 +162,6 @@ li.active a {
   border-radius: 99rem;
   box-shadow: $color-grey-dark-2;
   transition: all 0.3s ease-out;
-  margin-top: 3rem;
 
   &:hover {
     padding-left: 4.2rem;
