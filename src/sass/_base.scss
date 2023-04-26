@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text:wght@400;600;700&family=Nunito+Sans:wght@200;400;600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text:wght@400;600;700&family=Nunito+Sans:wght@200;400;600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Satisfy&family=Sedgwick+Ave+Display&display=swap");
 
 /* COLORS */
 $color-primary: #ec601e;
@@ -67,6 +67,11 @@ body {
   color: $color-grey-dark-2;
 }
 
+// body.modal__menu {
+//   height: 100vh;
+//   overflow: hidden;
+// }
+
 .container {
   max-width: 115rem;
   background-color: #fff;
@@ -83,6 +88,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.title__small {
+  font-family: "Crimson Text", serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
 p {
   font-size: 1.6rem;
 }
@@ -92,3 +104,4 @@ p {
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Nunito Sans', sans-serif;
 // font-family: 'Sedgwick Ave Display', cursive;
+// font-family: 'Satisfy', cursive;
