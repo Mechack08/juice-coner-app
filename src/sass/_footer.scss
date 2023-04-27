@@ -1,0 +1,46 @@
+footer {
+  margin: 5rem 0 0;
+  background-image: linear-gradient(to right bottom, #fff, $color-grey-light-2);
+
+  .part-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 5rem 4rem;
+    font-size: 1.6rem;
+  }
+
+  .hotel__wish {
+    &--title {
+      width: 15rem;
+    }
+    &--desc {
+      font-size: 1.4rem;
+    }
+  }
+
+  .hotel__menu {
+    &--title {
+      color: #444;
+    }
+    ul {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    li {
+      font-size: 1.4rem;
+    }
+  }
+
+  .part-2 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    background-image: linear-gradient(
+      to top right,
+      $color-grad-4,
+      $color-grey-light-2
+    );
+  }
+}
