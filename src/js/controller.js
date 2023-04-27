@@ -145,4 +145,80 @@ const getDisplayMenu = function () {
 };
 getDisplayMenu();
 
-// getHTMLIngredients(3);
+/* SLIDE */
+const slide = function () {
+  let currentSlideNormal = 0;
+  let currentSlideCocktail = 0;
+
+  const btnNextNormal = document.querySelector(".arrow__next--normal");
+  const btnPrevNormal = document.querySelector(".arrow__prev--normal");
+  const btnNextCoctail = document.querySelector(".arrow__next--cocktail");
+  const btnPrevCoctail = document.querySelector(".arrow__prev--cocktail");
+
+  btnNextNormal.addEventListener("click", function (e) {
+    const menuWrapperContainer = e.target
+      .closest(".menu__container")
+      .querySelector(".menu__container--wrapper");
+    const cards = menuWrapperContainer.querySelectorAll(".menu__content");
+
+    if (currentSlideNormal < cards.length - 4) {
+      currentSlideNormal++;
+      btnPrevNormal.style.opacity = 1;
+      menuWrapperContainer.style.transform = `translateX(${
+        -245 * currentSlideNormal
+      }px)`;
+    }
+
+    if (currentSlideNormal === cards.length - 4)
+      btnNextNormal.style.opacity = 0;
+  });
+
+  btnPrevNormal.style.opacity = 0;
+  btnPrevNormal.addEventListener("click", function (e) {
+    if (currentSlideNormal > 0) currentSlideNormal--;
+    btnNextNormal.style.opacity = 1;
+    const menuWrapperContainer = e.target
+      .closest(".menu__container")
+      .querySelector(".menu__container--wrapper");
+
+    menuWrapperContainer.style.transform = `translateX(${
+      -245 * currentSlideNormal
+    }px)`;
+
+    if (currentSlideNormal === 0) btnPrevNormal.style.opacity = 0;
+  });
+
+  btnNextCoctail.addEventListener("click", function (e) {
+    const menuWrapperContainer = e.target
+      .closest(".menu__container")
+      .querySelector(".menu__container--wrapper");
+    const cards = menuWrapperContainer.querySelectorAll(".menu__content");
+
+    if (currentSlideCocktail < cards.length - 4) {
+      currentSlideCocktail++;
+      btnPrevCoctail.style.opacity = 1;
+      menuWrapperContainer.style.transform = `translateX(${
+        -245 * currentSlideCocktail
+      }px)`;
+    }
+
+    if (currentSlideCocktail === cards.length - 4)
+      btnNextCoctail.style.opacity = 0;
+  });
+
+  btnPrevCoctail.style.opacity = 0;
+  btnPrevCoctail.addEventListener("click", function (e) {
+    if (currentSlideCocktail > 0) currentSlideCocktail--;
+    btnNextCoctail.style.opacity = 1;
+    const menuWrapperContainer = e.target
+      .closest(".menu__container")
+      .querySelector(".menu__container--wrapper");
+
+    menuWrapperContainer.style.transform = `translateX(${
+      -245 * currentSlideCocktail
+    }px)`;
+
+    if (currentSlideCocktail === 0) btnPrevCoctail.style.opacity = 0;
+  });
+};
+slide();
