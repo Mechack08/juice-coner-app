@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juice Corner</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <link rel="stylesheet" href="src/sass/main.scss" />
     <link
       rel="stylesheet"
@@ -164,6 +175,72 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="location location__section">
+        <h2 class="title__big location__title">Welcome at Juice Corner</h2>
+        <div class="location__img--hotel">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="Restaurant photo"
+          />
+          <div class="location__addresse">
+            <div class="hotel__program">
+              <h2 class="title__small location__small--title">Open Time</h2>
+              <ul class="program__list">
+                <li class="program__item">
+                  <span class="tit">Mon</span>
+                  <span class="cont">: 11 am - 22 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Tue</span>
+                  <span class="cont">: 11 am - 22 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Wed</span>
+                  <span class="cont">: 11 am - 22 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Thu</span>
+                  <span class="cont">: 11 am - 22 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Fri</span>
+                  <span class="cont">: 11 am - 23 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Sat</span>
+                  <span class="cont">: 10 am - 24 am</span>
+                </li>
+                <li class="program__item">
+                  <span class="tit">Sun</span>
+                  <span class="cont">: 10 am - 24 am</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel__location">
+              <h2 class="title__small location__small--title">Contact Us</h2>
+              <div class="location__items">
+                <div class="location__item">
+                  <span class="title">Location</span>
+                  <span class="desc">346 H 8th Ave, K'la Uganda</span>
+                </div>
+                <div class="location__item">
+                  <span class="title">Email</span>
+                  <span class="desc">juicecorner86@outlook.com</span>
+                </div>
+                <div class="location__item">
+                  <span class="title">Phone</span>
+                  <span class="desc">+256 778 451 957</span>
+                </div>
+                <div class="location__item">
+                  <span class="title">Fax</span>
+                  <span class="desc">98766676</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location__map" id="map"></div>
       </section>
     </div>
   </body>
