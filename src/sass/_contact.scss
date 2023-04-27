@@ -1,0 +1,63 @@
+.contact {
+  padding: 5rem 2.5rem 1rem;
+
+  &__desc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      input {
+        height: 4rem;
+        border: none;
+        border-bottom: 1px solid $color-grey-light-2;
+        outline: none;
+
+        &:focus {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+
+      .input__name {
+        grid-column: 1 / 2;
+      }
+      .input__email {
+        grid-column: 2 / -1;
+      }
+      .input__subject {
+        grid-column: 1 / -1;
+      }
+      textarea {
+        grid-column: 1 / -1;
+        border: none;
+        border-bottom: 1px solid $color-grey-light-2;
+        outline: none;
+
+        &:focus {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+
+      button {
+        height: 4rem;
+        border: none;
+        background-color: $color-grad-2;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        width: 70%;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}
