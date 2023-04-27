@@ -1,0 +1,104 @@
+.location {
+  padding: 5rem 0 1rem;
+  background-image: linear-gradient(to right bottom, $color-grey-light-1, #fff);
+
+  &__title {
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__small--title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #444;
+  }
+
+  &__img--hotel {
+    height: 40rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 10;
+    }
+  }
+
+  &__addresse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 70%;
+    font-size: 1.4rem;
+    font-family: "Nunito", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      background-color: #ffffff9e;
+      width: 48%;
+      padding: 2rem;
+    }
+  }
+
+  .program__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+
+    .program__item {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      span.tit {
+        font-weight: 600;
+        color: #444;
+      }
+      span.cont {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-grad-2,
+          $color-grad-3
+        );
+        color: #fff;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+  &__item {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    .title {
+      font-weight: 600;
+      color: #444;
+    }
+    .desc {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-grad-2,
+        $color-grad-3
+      );
+      color: #fff;
+    }
+  }
+}
+
+#map {
+  height: 20rem;
+}
+.location__map {
+  margin-top: 2rem;
+}
