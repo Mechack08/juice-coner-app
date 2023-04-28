@@ -99,29 +99,6 @@ p {
   font-size: 1.6rem;
 }
 
-.out__images {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  display: flex;
-  justify-content: space-between;
-
-  &--img {
-    width: 35rem;
-
-    &-1 {
-      transform: translateX(-8rem) scale(0.55);
-    }
-    &-2 {
-      transform: translateY(-17rem) translateX(68rem) scale(0.7) rotate(-10deg);
-    }
-    &-3 {
-      transform: scale(0.6) translateX(10rem) translateY(50rem);
-    }
-  }
-}
-
 // font-family: 'Caveat', cursive;
 // font-family: 'Crimson Text', serif;
 // font-family: 'Nunito', sans-serif;
