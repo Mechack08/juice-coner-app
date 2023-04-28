@@ -259,7 +259,7 @@ const slide = function () {
       .querySelector(".menu__container--wrapper");
     const cards = menuWrapperContainer.querySelectorAll(".menu__content");
 
-    if (currentSlideNormal < cards.length - 4) {
+    if (currentSlideNormal < cards.length - 5) {
       currentSlideNormal++;
       btnPrevNormal.style.opacity = 1;
       menuWrapperContainer.style.transform = `translateX(${
@@ -267,7 +267,7 @@ const slide = function () {
       }px)`;
     }
 
-    if (currentSlideNormal === cards.length - 4)
+    if (currentSlideNormal === cards.length - 5)
       btnNextNormal.style.opacity = 0;
   });
 
@@ -292,7 +292,7 @@ const slide = function () {
       .querySelector(".menu__container--wrapper");
     const cards = menuWrapperContainer.querySelectorAll(".menu__content");
 
-    if (currentSlideCocktail < cards.length - 4) {
+    if (currentSlideCocktail < cards.length - 5) {
       currentSlideCocktail++;
       btnPrevCoctail.style.opacity = 1;
       menuWrapperContainer.style.transform = `translateX(${
@@ -300,7 +300,7 @@ const slide = function () {
       }px)`;
     }
 
-    if (currentSlideCocktail === cards.length - 4)
+    if (currentSlideCocktail === cards.length - 5)
       btnNextCoctail.style.opacity = 0;
   });
 
