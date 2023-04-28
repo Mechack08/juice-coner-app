@@ -1,11 +1,21 @@
 .contact {
   padding: 5rem 2.5rem 1rem;
 
+  &__title {
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+  }
+
   &__desc {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     gap: 2rem;
     margin-top: 4rem;
+
+    transform: scale(0.2);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
 
     form {
       display: grid;

@@ -84,57 +84,91 @@ const menuAnimation = function () {
 };
 menuAnimation();
 
-/* Contact Animation */
-const locTitle = document.querySelector(".location__title");
-const locImage = document.querySelector(".location__img--hotel");
-const locAddress = document.querySelector(".hotel__location");
-const locProgram = document.querySelector(".hotel__program");
+/* Location and Programme Animation */
+const locationObserverFunc = function () {
+  const locTitle = document.querySelector(".location__title");
+  const locImage = document.querySelector(".location__img--hotel");
+  const locAddress = document.querySelector(".hotel__location");
+  const locProgram = document.querySelector(".hotel__program");
 
-const locationTitleObserver = new IntersectionObserver(observerFucn, {
-  root: null,
-  threshold: 0.05,
-});
-locationTitleObserver.observe(locTitle);
+  const locationTitleObserver = new IntersectionObserver(observerFucn, {
+    root: null,
+    threshold: 0.05,
+  });
+  locationTitleObserver.observe(locTitle);
 
-const locationObserver = function (entries, observer) {
-  const [entry] = entries;
-
-  if (!entry.isIntersecting) return;
-  entry.target.style.transform = "scale(1)";
-
-  observer.unobserve(entry.target);
-};
-
-// Hotel IMG observer
-const hotelImgObserver = new IntersectionObserver(
-  function (entries, observer) {
+  const locationObserver = function (entries, observer) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) return;
-    entry.target.style.filter = "none";
+    entry.target.style.transform = "scale(1)";
+
+    observer.unobserve(entry.target);
+  };
+
+  // Hotel IMG observer
+  const hotelImgObserver = new IntersectionObserver(
+    function (entries, observer) {
+      const [entry] = entries;
+
+      if (!entry.isIntersecting) return;
+      entry.target.style.filter = "none";
+
+      observer.unobserve(entry.target);
+    },
+    {
+      root: null,
+      threshold: 0.2,
+    }
+  );
+  hotelImgObserver.observe(locImage);
+
+  // Program Observer
+  const hotelProgramObserver = new IntersectionObserver(locationObserver, {
+    root: null,
+    threshold: 0.2,
+  });
+  hotelProgramObserver.observe(locProgram);
+
+  // Address Observer
+  const hotelAddressObserver = new IntersectionObserver(locationObserver, {
+    root: null,
+    threshold: 0.2,
+  });
+  hotelAddressObserver.observe(locAddress);
+};
+locationObserverFunc();
+
+const contactTitle = document.querySelector(".contact__title");
+const contactDescription = document.querySelector(".contact__desc");
+
+const contactTitleObserver = new IntersectionObserver(
+  function (entries, observer) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+
+    entry.target.style.opacity = 1;
+    entry.target.style.transform = "translateY(0)";
 
     observer.unobserve(entry.target);
   },
-  {
-    root: null,
-    threshold: 0.2,
-  }
+  { root: null, threshold: 0.2 }
 );
-hotelImgObserver.observe(locImage);
+contactTitleObserver.observe(contactTitle);
 
-// Program Observer
-const hotelProgramObserver = new IntersectionObserver(locationObserver, {
-  root: null,
-  threshold: 0.2,
-});
-hotelProgramObserver.observe(locProgram);
+const contactDescObserver = new IntersectionObserver(
+  function (entries, observer) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
 
-// Address Observer
-const hotelAddressObserver = new IntersectionObserver(locationObserver, {
-  root: null,
-  threshold: 0.2,
-});
-hotelAddressObserver.observe(locAddress);
+    entry.target.style.opacity = 1;
+    entry.target.style.transform = "scale(1)";
+
+    observer.unobserve(entry.target);
+  },
+  { root: null, threshold: 0.2 }
+);
+contactDescObserver.observe(contactDescription);
 
 /* LOAD MENUS */
 const getHTMLIngredients = function (index) {
