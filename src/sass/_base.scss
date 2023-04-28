@@ -15,6 +15,7 @@ $color-grey-dark-2: #777777;
 $gradient: linear-gradient(to right bottom, $color-grad-2, $color-grad-3);
 
 $bp-large: 78.15em; // 1250px
+$bp-normal: 72.8em; // 1165px
 $bp-medium: 61.25em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
@@ -67,18 +68,17 @@ body {
   color: $color-grey-dark-2;
 }
 
-// body.modal__menu {
-//   height: 100vh;
-//   overflow: hidden;
-// }
-
 .container {
-  max-width: 115rem;
+  max-width: 125em;
   background-color: #fff;
   margin: 5rem auto;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 8px $color-primary;
   overflow: hidden;
+
+  @include responsive(big-desk) {
+    margin: 0;
+  }
 }
 
 .title__big {
