@@ -47,10 +47,28 @@
     display: flex;
     justify-content: space-between;
 
+    @include responsive(big-desk) {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    @include responsive(tab-land) {
+      // flex-direction: column;
+      // align-items: center;
+      // left: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
     & > div {
       background-color: #ffffff9e;
       width: 48%;
       padding: 2rem;
+      @include responsive(tab-land) {
+        width: 100%;
+      }
     }
   }
 
