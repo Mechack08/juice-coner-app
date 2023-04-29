@@ -168,6 +168,7 @@ li.active a {
   }
 }
 
+// BANNER
 .banner {
   margin-top: 6rem;
   display: grid;
@@ -176,6 +177,13 @@ li.active a {
   background-image: linear-gradient(to right bottom, #fff, $color-grad-4);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include responsive(tab-land) {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include responsive(phone) {
+    display: block;
+  }
 }
 .banner__welcome {
   grid-column: 1 / 2;
@@ -211,6 +219,14 @@ li.active a {
   transform: translateX(32rem);
   opacity: 1;
   transition: all 1s cubic-bezier(0.81, 0.1, 0.06, 0.56);
+
+  @include responsive(tab-land) {
+    transform: translateX(0);
+    justify-self: end;
+  }
+  @include responsive(phone) {
+    display: none;
+  }
 }
 .juice__img--hide {
   transform: scale(4) translateX(50rem);
@@ -221,6 +237,11 @@ li.active a {
   transform: rotate(-320deg) translateY(-7rem) translateX(-5rem);
   transition: all 0.9s cubic-bezier(0.98, 0.83, 0.62, 0.74);
   transition-delay: 0.5s;
+
+  @include responsive(tab-land) {
+    transform: rotate(-320deg) translateY(-7rem) translateX(-5rem) scale(0.8);
+    display: none;
+  }
 }
 .strow__img--hide {
   transform: scale(0.2) rotate(-320deg) translateY(-20rem) translateX(-50rem);

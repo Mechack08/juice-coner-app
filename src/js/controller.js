@@ -364,10 +364,11 @@ menuDisplay.addEventListener("click", function (e) {
 });
 window.addEventListener("resize", function (e) {
   if (e.target.innerWidth > 780) {
-    // const menuCheck = document.querySelector(".hemb__menu input");
-    // menuCheck.checked = true;
     menuList.style.transform = "translateX(0)";
     menuCart.style.transform = "translateX(0)";
     menuSearch.style.transform = "translateX(0)";
+  } else {
+    const menuCheck = document.querySelector(".hemb__menu input");
+    menuCheck.checked = true;
   }
 });
