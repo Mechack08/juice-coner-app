@@ -1,0 +1,242 @@
+header {
+  position: relative;
+}
+
+.hemb__menu {
+  font-size: 3.2rem;
+  display: none;
+
+  @include responsive(tab-port) {
+    display: block;
+    justify-self: end;
+    cursor: pointer;
+  }
+
+  input {
+    visibility: hidden;
+    position: absolute;
+    transform: scale(0.1);
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+  align-items: center;
+  font-size: 1.6rem;
+  padding-top: 4rem;
+
+  @include responsive(tab-land) {
+    grid-template-columns: 2.5rem repeat(9, 1fr) 2.5rem;
+  }
+
+  @include responsive(tab-port) {
+    grid-template-columns: 2.5rem 1fr 4fr 2.5rem;
+  }
+  @include responsive(phone) {
+    grid-template-columns: 2.5rem 1fr 2fr 2.5rem;
+  }
+}
+
+.logo {
+  font-size: 1.8rem;
+  grid-column: 2 / 3;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.searchbar {
+  grid-column: 3 / 7;
+  justify-self: center;
+  border: 1px solid $color-grey-dark-1;
+  width: 80%;
+  background-color: brown;
+  position: relative;
+  height: 3.5rem;
+  border-radius: 99rem;
+
+  display: flex;
+
+  @include responsive(tab-port) {
+    grid-column: 3 / 4;
+    width: 95%;
+
+    position: fixed;
+    top: 28rem;
+    z-index: 101;
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 99rem;
+    padding: 0 8.5rem 0 1.3rem;
+  }
+
+  .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 0.2rem;
+    transform: translateY(-50%);
+    height: 3rem;
+    width: 7.5rem;
+    border-radius: 99rem;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: #fff;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: $color-grad-3;
+    }
+  }
+}
+
+.nav__list {
+  grid-column: 7 / 10;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  @include responsive(tab-port) {
+    transform: translateX(100%);
+    position: fixed;
+    top: 12rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 0 8rem;
+    z-index: 100;
+    transform: translateX(0%);
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    border-top: 1px solid $color-grey-light-2;
+  }
+}
+li {
+  transition: all 0.3s ease-out;
+}
+li.active a {
+  color: $color-primary;
+}
+
+.order {
+  grid-column: 11 / 12;
+
+  @include responsive(tab-land) {
+    grid-column: 10 / 11;
+  }
+
+  @include responsive(tab-port) {
+    position: absolute;
+    top: 13.5rem;
+    left: 2rem;
+    z-index: 100;
+    width: 100%;
+    transform: translate(100%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order__icon {
+  position: relative;
+}
+.order__number {
+  position: absolute;
+  top: -0.8rem;
+  right: -0.8rem;
+  font-size: 1rem;
+  background-color: $color-grad-2;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.order__desc {
+  font-size: 1.2rem;
+
+  .cart__total {
+    font-weight: 700;
+    color: #222;
+  }
+}
+
+.banner {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 3rem 5rem;
+  background-image: linear-gradient(to right bottom, #fff, $color-grad-4);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner__welcome {
+  grid-column: 1 / 2;
+  margin-top: 5rem;
+  transition: all 0.8s;
+
+  .banner__title {
+    font-size: 4.8rem;
+  }
+}
+.banner__welcome.hide {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.banner__btn {
+  margin-top: 3rem;
+}
+
+.img__delivery {
+  width: 2.5rem;
+}
+.banner__image {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.img__container {
+  height: 50rem;
+}
+
+.juice__img {
+  transform: translateX(32rem);
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.81, 0.1, 0.06, 0.56);
+}
+.juice__img--hide {
+  transform: scale(4) translateX(50rem);
+  opacity: 0;
+}
+
+.strow__img {
+  transform: rotate(-320deg) translateY(-7rem) translateX(-5rem);
+  transition: all 0.9s cubic-bezier(0.98, 0.83, 0.62, 0.74);
+  transition-delay: 0.5s;
+}
+.strow__img--hide {
+  transform: scale(0.2) rotate(-320deg) translateY(-20rem) translateX(-50rem);
+  opacity: 0;
+}
+
+.btn__delivery {
+  background-color: $color-primary;
+  padding: 1.5rem 4rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 99rem;
+  box-shadow: $color-grey-dark-2;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    padding-left: 4.2rem;
+  }
+}

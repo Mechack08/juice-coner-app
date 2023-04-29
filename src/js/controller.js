@@ -341,3 +341,33 @@ const map = function () {
   }).addTo(map);
 };
 map();
+
+/* RESPONSIVE */
+const menuDisplay = document.querySelector(".hemb__menu");
+const menuList = document.querySelector(".nav__list");
+const menuCart = document.querySelector(".order");
+const menuSearch = document.querySelector(".searchbar");
+menuDisplay.addEventListener("click", function (e) {
+  const input = e.target.closest(".hemb__menu").querySelector("input");
+  if (input.checked) input.checked = false;
+  else input.checked = true;
+
+  if (input.checked) {
+    menuList.style.transform = "translateX(0)";
+    menuCart.style.transform = "translateX(0)";
+    menuSearch.style.transform = "translateX(0)";
+  } else {
+    menuList.style.transform = "translateX(100%)";
+    menuCart.style.transform = "translateX(100%)";
+    menuSearch.style.transform = "translateX(110%)";
+  }
+});
+window.addEventListener("resize", function (e) {
+  if (e.target.innerWidth > 780) {
+    // const menuCheck = document.querySelector(".hemb__menu input");
+    // menuCheck.checked = true;
+    menuList.style.transform = "translateX(0)";
+    menuCart.style.transform = "translateX(0)";
+    menuSearch.style.transform = "translateX(0)";
+  }
+});

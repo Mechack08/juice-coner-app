@@ -15,9 +15,9 @@ $color-grey-dark-2: #777777;
 $gradient: linear-gradient(to right bottom, $color-grad-2, $color-grad-3);
 
 $bp-large: 78.15em; // 1250px
-$bp-normal: 72.8em; // 1165px
 $bp-medium: 61.25em; // 980px
-$bp-small: 37.5em; // 600px
+// $bp-small: 37.5em; // 600px
+$bp-small: 48.75em; // 780px
 $bp-smallest: 31.25em; // 500px
 
 * {
@@ -55,6 +55,10 @@ img {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
 }
 
 body {
