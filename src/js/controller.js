@@ -244,6 +244,11 @@ const getDisplayMenu = function () {
 getDisplayMenu();
 
 /* SLIDE */
+const menuCardWrapper = document.querySelector(".menu__container--wrapper");
+let displaySlideCardNumber = Math.ceil(
+  menuCardWrapper.getBoundingClientRect().width / 198 - 1
+);
+console.log(displaySlideCardNumber);
 const slide = function () {
   let currentSlideNormal = 0;
   let currentSlideCocktail = 0;
@@ -259,7 +264,7 @@ const slide = function () {
       .querySelector(".menu__container--wrapper");
     const cards = menuWrapperContainer.querySelectorAll(".menu__content");
 
-    if (currentSlideNormal < cards.length - 5) {
+    if (currentSlideNormal < cards.length - displaySlideCardNumber) {
       currentSlideNormal++;
       btnPrevNormal.style.opacity = 1;
       menuWrapperContainer.style.transform = `translateX(${
@@ -267,7 +272,7 @@ const slide = function () {
       }px)`;
     }
 
-    if (currentSlideNormal === cards.length - 5)
+    if (currentSlideNormal === cards.length - displaySlideCardNumber)
       btnNextNormal.style.opacity = 0;
   });
 
@@ -292,7 +297,7 @@ const slide = function () {
       .querySelector(".menu__container--wrapper");
     const cards = menuWrapperContainer.querySelectorAll(".menu__content");
 
-    if (currentSlideCocktail < cards.length - 5) {
+    if (currentSlideCocktail < cards.length - displaySlideCardNumber) {
       currentSlideCocktail++;
       btnPrevCoctail.style.opacity = 1;
       menuWrapperContainer.style.transform = `translateX(${
@@ -300,7 +305,7 @@ const slide = function () {
       }px)`;
     }
 
-    if (currentSlideCocktail === cards.length - 5)
+    if (currentSlideCocktail === cards.length - displaySlideCardNumber)
       btnNextCoctail.style.opacity = 0;
   });
 
@@ -362,6 +367,7 @@ menuDisplay.addEventListener("click", function (e) {
     menuSearch.style.transform = "translateX(110%)";
   }
 });
+
 window.addEventListener("resize", function (e) {
   if (e.target.innerWidth > 780) {
     menuList.style.transform = "translateX(0)";
@@ -371,4 +377,20 @@ window.addEventListener("resize", function (e) {
     const menuCheck = document.querySelector(".hemb__menu input");
     menuCheck.checked = true;
   }
+
+  if (e.target.innerWidth >= 1050) return;
+
+  displaySlideCardNumber = Math.ceil(
+    menuCardWrapper.getBoundingClientRect().width / 198
+  );
+});
+
+window.addEventListener("load", function (e) {
+  console.log(e.target.querySelector(".container"));
+  const containerSize = e.target
+    .querySelector(".container")
+    .getBoundingClientRect().width;
+
+  if (containerSize !== 1250) return;
+  displaySlideCardNumber = 5;
 });
