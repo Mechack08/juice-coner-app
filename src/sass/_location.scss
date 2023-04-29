@@ -52,9 +52,6 @@
       justify-content: space-evenly;
     }
     @include responsive(tab-land) {
-      // flex-direction: column;
-      // align-items: center;
-      // left: 0;
       transform: translate(-50%, -50%) scale(0.8);
       width: 100%;
       display: grid;
